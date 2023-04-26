@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake up &amp; Workout</title>
+    <link href="./style.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <header class="heading">
+        <!-- Left for logo -->
+        <div class="left">
+            <img src="images/gym logo.jpg">
+            <!-- <div>Wake up& Workout</div> -->
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5501/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#">Photos</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#">About us</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html#">Help</a></li>
+            </ul>
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;"> Join the best gym of India</h1>
+        <!-- <form action="http://127.0.0.1:5501/noaction.php"> -->
+            <!-- <form action="https://getform.io/f/1451bfac-c518-4c73-83fe-761a0be48318" method="post" method="get"> -->
+            <form >
+            <div class="formgroup">
+                <input type="text" id="email" name="email" placeholder="Enter your Email" >
+            </div>
+            <div class="formgroup">
+                <input type="text"  id="Name1" name="name" placeholder="Enter your Name" >
+            </div>
+            <div class="formgroup">
+                <input type="text" id="Age1" name="age" placeholder="Enter your Age" >
+            </div>
+            <div class="formgroup">
+                <input type="text" id="city" name="city1" placeholder="Enter your city" >                                    
+            </div>
+            <div class="formgroup"> 
+                <input type="text" id="num" name="num2" placeholder=" Enter Phone Number" >
+            </div>
+            
+            <button  class="btn" onclick="check()">submit</button>
+            
+            
+        </form>
+    </div>
+
+<!-- Code injected by live-server
+ -->
+
+ 
+ <script>
+        
+ function  check(){
+     var a= document.getElementById("email").value;
+     var b= document.getElementById("num").value;
+     var c= document.getElementById("Name1").value;
+     var d= document.getElementById("Age1").value;
+     var e= document.getElementById("city").value;
+    //  var f= document.getElementById("btn2");
+
+     
+     var pattern1 = ("^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[\\w]$");
+     var pattern2 = (/^\d{10}$/);
+     var pattern3 = (/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/);
+    //  var pattern4 = (/^1\d{1,2}$|^2[0-4]\d$|^25[0-5]$|^1[89]$/);
+     var pattern4 = (/^(1[89]|[2-9]\d)$/gm);
+     var pattern5 = (/^[a-zA-Z]+(?:[\s-'][a-zA-Z]+)*$/);
+
+     var Regex1 = new RegExp(pattern1);
+     var Regex2 = new RegExp(pattern2);
+     var Regex3 = new RegExp(pattern3);
+     var Regex4 = new RegExp(pattern4);
+     var Regex5 = new RegExp(pattern5);
+
+     if(Regex1.test(a) && Regex2.test(b) && Regex3.test(c) && Regex4.test(d) && Regex5.test(e) ){
+        alert("welcome");   
+    //  console.log("Welcome");  
+     }
+
+     else
+     {
+        alert("Please enter valid information");
+     }
+ }
+
+     </script>
+
+
+</body>
+</html>

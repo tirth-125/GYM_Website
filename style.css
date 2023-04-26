@@ -1,0 +1,175 @@
+/* arabic */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v5/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TyjSpP6JYtZfQ.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v5/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TyjSpPwJYtZfQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v5/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TyjSpPxJYtZfQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v5/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TyjSpP_JYs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('images/gym\ logo.jpg');
+    background-image: url('images/Back\ image.jpg');
+    height: 101vh;
+    width: 101vw;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+        left: 28px;
+        top: 13px;
+
+}
+
+.left img {
+    width: 35px;
+    border: 2px black solid;
+    border-radius: 10%;
+    filter: invert(100%);
+    
+}
+
+.mid {
+    display: block;
+    /* border: 2px black solid; */
+    /* text-align: center; */
+    width: 25%;
+    height: 10%;
+    margin: 20px auto;
+    margin-top: 0px;
+}
+
+.right {
+
+    display: inline-block;
+    position: absolute;
+    right: 70px;
+    top: 12px;
+    /* border: 2px black solid; */
+
+
+}
+
+.btn {
+    display: inline-block;
+    margin: -1px 5px;
+    color: rgb(217, 0, 53);
+    border: 2px darkgray solid;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+/* .container btn2 {
+    display: inline-block;
+    margin: 10px 20px;
+} */
+
+.btn:hover {
+    color: black;
+    text-decoration-line: underline;
+
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    background-color: cornsilk;
+    padding: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    color: firebrick;
+    text-decoration-line: underline;
+    /* background-color: cornflowerblue;
+    border: 0px black solid;
+    border-radius: 1px; */
+}
+
+.container {
+    padding: 22px;
+    /* padding: -20px 100px; */
+    margin: 25px 30px;
+    
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 50%;
+    
+}
+h1{
+    text-align: center;
+    color: #ff0000
+
+}
+
+.formgroup input {
+    text-align: center;
+    display: block;
+    padding: 10px 90px;
+    margin: 10px auto;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 20px;
+    border: 2px black solid;
+    border-radius: 21px;
+}
+
+.container button{
+    display: block;
+    padding: 10px;
+    width: 36%;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 52px;
+}
